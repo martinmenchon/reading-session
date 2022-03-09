@@ -1,7 +1,8 @@
 import matplotlib.pyplot as plt
+
+
 plt.style.use('fivethirtyeight')
 plt.rcParams['lines.linewidth'] = 1.5
-
 
 def train_test_split(data, steps):
     data_train = data[:-steps]
