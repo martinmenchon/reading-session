@@ -8,6 +8,7 @@ def results(data_train, y_true, y_pred):
     y_true["y"].plot(ax=ax, label="test")
     y_pred.plot(ax=ax, label="y_pred")
     ax.legend()
+    plt.savefig("./data/07_model_output/results.jpg")
 
     error_mse = mean_squared_error(y_true=y_true["y"], y_pred=y_pred)
     print(f"Error de test (mse): {error_mse}")

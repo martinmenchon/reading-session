@@ -8,3 +8,13 @@ h2o_exog:
   filepath: data/01_raw/h2o_exog.csv
   load_args:
     sep: ','
+
+data_cleaned:
+  type: pandas.CSVDataSet
+  filepath: data/02_intermediate/data_cleaned.csv
+  load_args:
+    sep: ','
+  save_args:
+    index: True
+    date_format: '%Y-%m-%d %H:%M'
+    decimal: .
