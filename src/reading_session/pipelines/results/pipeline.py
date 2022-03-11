@@ -15,7 +15,7 @@ def create_pipeline():
             node(
                 func=results,
                 inputs=["data_train", "y_true", "y_pred"],
-                outputs=None,
+                outputs="results",
                 name="results",
             )
         ]

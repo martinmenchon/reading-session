@@ -16,5 +16,11 @@ data_cleaned:
     sep: ','
   save_args:
     index: True
-    date_format: '%Y-%m-%d %H:%M'
+    date_format: '%Y-%m-%d'
     decimal: .
+
+results:
+  type: pandas.CSVDataSet
+  filepath: data/07_model_output/y_pred.csv
+  load_args:
+    sep: ','

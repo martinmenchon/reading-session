@@ -12,3 +12,5 @@ def results(data_train, y_true, y_pred):
 
     error_mse = mean_squared_error(y_true=y_true["y"], y_pred=y_pred)
     print(f"Error de test (mse): {error_mse}")
+    y_true["y"] = y_pred
+    return y_true
