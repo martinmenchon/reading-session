@@ -11,9 +11,4 @@ def test_train_data_range():
     df = df.set_index("date")
     df = df.asfreq("MS")
     df = df.sort_index()
-    assert (df.index == pd.date_range(start=df.index.min(), end=df.index.max(), freq=df.index.freq)).all() is True
-
-
-def test_forecasting_not_empty():
-    df = pd.read_csv("data/07_model_output/y_pred.csv")
-    assert df.empty is False
+    assert (df.index == pd.date_range(start=df.index.min(), end=df.index.max(), freq=df.index.freq)).all() == True
